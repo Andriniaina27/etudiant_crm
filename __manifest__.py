@@ -1,0 +1,19 @@
+{
+    'name': "CRM Étudiants",
+    'summary': "Gestion des étudiants avec CRM",
+    'description': "Module de gestion des étudiants avec fonctionnalités CRM",
+    'author': "Basilio, Luca IGF-IA/PRO42",
+    'category': 'Education',
+    'version': '18.0.1.0.0',
+    'depends': ['base', 'crm', 'mail'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/etudiant_views.xml',
+        'views/etudiant_menu.xml',
+        'views/stage_views.xml',
+        'views/crm_views.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+}

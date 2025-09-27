@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Définir l'action AVANT le menu -->
+    <record id="action_etudiants" model="ir.actions.act_window">
+        <field name="name">Étudiants</field>
+        <field name="res_model">etudiants.etudiant</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menu racine -->
+    <menuitem id="menu_etudiants_root" name="CRM Étudiants" sequence="10"/>
+    
+    <!-- Sous-menu Étudiants -->
+    <menuitem id="menu_etudiants" name="Étudiants" parent="menu_etudiants_root" sequence="10"/>
+    
+    <!-- Menu Liste des Étudiants -->
+    <menuitem id="menu_etudiants_list" name="Liste des Étudiants" 
+              parent="menu_etudiants" action="action_etudiants" sequence="10"/>
+    
+    <!-- Action pour les stages -->
+    <record id="action_etudiants_stage" model="ir.actions.act_window">
+        <field name="name">Stages</field>
+        <field name="res_model">etudiants.stage</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    
+    <!-- Menu Stages -->
+    <menuitem id="menu_stages" name="Stages" parent="menu_etudiants_root" sequence="20"/>
+    <menuitem id="menu_stages_list" name="Liste des Stages" 
+              parent="menu_stages" action="action_etudiants_stage" sequence="10"/>
+</odoo>

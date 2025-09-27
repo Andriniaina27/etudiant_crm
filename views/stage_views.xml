@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_stage_list" model="ir.ui.view">
+        <field name="name">etudiants.stage.list</field>
+        <field name="model">etudiants.stage</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="etudiant_id"/>
+                <field name="entreprise_id"/>
+                <field name="date_debut"/>
+                <field name="date_fin"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_stage_form" model="ir.ui.view">
+        <field name="name">etudiants.stage.form</field>
+        <field name="model">etudiants.stage</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="etudiant_id"/>
+                            <field name="entreprise_id"/>
+                        </group>
+                        <group>
+                            <field name="date_debut"/>
+                            <field name="date_fin"/>
+                            <field name="state"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="description" widget="textarea"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

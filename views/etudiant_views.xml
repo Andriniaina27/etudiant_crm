@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Vue liste -->
+    <record id="view_etudiant_list" model="ir.ui.view">
+        <field name="name">etudiants.etudiant.list</field>
+        <field name="model">etudiants.etudiant</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="numero_etudiant"/>
+                <field name="filiere"/>
+                <field name="niveau"/>
+                <field name="state" widget="badge"/>
+                <field name="stage_count" string="Stages"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vue formulaire -->
+    <record id="view_etudiant_form" model="ir.ui.view">
+        <field name="name">etudiants.etudiant.form</field>
+        <field name="model">etudiants.etudiant</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" name="action_view_stages" type="object" string="Stages">
+                            <field name="stage_count" widget="statinfo" string="Stages"/>
+                        </button>
+                    </div>
+                    
+                    <group>
+                        <group string="Informations Personnelles">
+                            <field name="name"/>
+                            <field name="numero_etudiant"/>
+                            <field name="cin"/>
+                            <field name="date_naissance"/>
+                        </group>
+                        <group string="Coordonnées">
+                            <field name="email"/>
+                            <field name="telephone"/>
+                            <field name="adresse" widget="textarea"/>
+                        </group>
+                    </group>
+                    <group string="Informations Académiques">
+                        <group>
+                            <field name="filiere"/>
+                            <field name="niveau"/>
+                            <field name="projet_pfe"/>
+                        </group>
+                        <group>
+                            <field name="tuteur_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
