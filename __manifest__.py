@@ -2,7 +2,7 @@
     'name': "CRM Étudiants",
     'summary': "Gestion des étudiants avec CRM",
     'description': "Module de gestion des étudiants avec fonctionnalités CRM",
-    'author': "Basilio, Luca IGF-IA/PRO42",
+    'author': "Basilio, Luca, Manantsoa IGF-IA/PRO42",
     'category': 'Education',
     'version': '18.0.1.0.0',
     'depends': ['base', 'crm', 'mail'],
