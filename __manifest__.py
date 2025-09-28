@@ -12,6 +12,7 @@
         'views/etudiant_menu.xml',
         'views/stage_views.xml',
         'views/crm_views.xml',
+        'views/crm_lead_kanban_views.xml',
     ],
     'installable': True,
     'application': True,

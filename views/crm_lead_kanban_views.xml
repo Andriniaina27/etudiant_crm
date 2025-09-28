@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--code ecrit par BASILIO-->
+<odoo>
+<record id="crm_lead_kanban_view_inherit_etudiant" model="ir.ui.view">
+    <field name="name">crm.lead.kanban.inherit.etudiant</field>
+    <field name="model">crm.lead</field>
+    <field name="inherit_id" ref="crm.crm_case_kanban_view_leads"/>
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='name']" position="after">
+            <div>
+                <div class="o_kanban_record_subtitle">
+                    <field name="numero_etudiant"/>
+                </div>
+                <div>
+                    Projet Fin d'étude: <field name="projet_pfe"/>
+                </div>
+                <div class="o_kanban_record_subtitle">
+                    Tuteur: <field name="tuteur_id"/>
+                </div>
+            </div>
+        </xpath>
+    </field>
+</record>
+</odoo>
