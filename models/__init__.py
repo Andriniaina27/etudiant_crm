@@ -1,2 +1,1 @@
-from . import etudiant_model
-from . import res_partner
+from . import Crmlead, Etudiant, Stage, res_partner
