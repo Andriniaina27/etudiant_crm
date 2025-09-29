@@ -53,7 +53,7 @@
             </xpath>
 
             <xpath expr="//field[@name='user_id']" position="attributes">
-                <attribute name="string">Encadrant PFE</attribute>
+                <attribute name="string">Encadreur</attribute>
             </xpath>
 
         </field>
