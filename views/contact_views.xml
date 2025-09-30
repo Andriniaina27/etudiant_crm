@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--code ecrit par BASILIO-->
+<odoo>
+    <record id="view_partner_form_mg" model="ir.ui.view">
+        <field name="name">res.partner.form.mg</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='name' and @id='company']" position="attributes">
+                <attribute name="placeholder">oh: IS-INFO IGFIA-CRM</attribute>
+                <attribute name="string">Anaran’ny orinasa</attribute>
+            </xpath>
+            <xpath expr="//field[@name='name' and @id='individual']" position="attributes">
+                <attribute name="placeholder">oh: Rakoto Jean</attribute>
+                <attribute name="string">Anaran’ny olona</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='vat']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='street']" position="attributes">
+                <attribute name="placeholder">Lalana...</attribute>
+                <attribute name="string">Lalana</attribute>
+            </xpath>
+            <xpath expr="//field[@name='street2']" position="attributes">
+                <attribute name="placeholder">Lalana fanampiny...</attribute>
+                <attribute name="string">Lalana fanampiny</attribute>
+            </xpath>
+            <xpath expr="//field[@name='city']" position="attributes">
+                <attribute name="placeholder">Tanàna</attribute>
+                <attribute name="string">Tanàna</attribute>
+            </xpath>
+            <xpath expr="//field[@name='state_id']" position="attributes">
+                <attribute name="placeholder">Faritra</attribute>
+                <attribute name="string">Faritra</attribute>
+            </xpath>
+            <xpath expr="//field[@name='zip']" position="attributes">
+                <attribute name="placeholder">Kaody paositra</attribute>
+                <attribute name="string">Kaody paositra</attribute>
+            </xpath>
+            <xpath expr="//field[@name='country_id']" position="attributes">
+                <attribute name="placeholder">Firenena</attribute>
+                <attribute name="string">Firenena</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='phone']" position="attributes">
+                <attribute name="string">Laharana finday/foibe</attribute>
+            </xpath>
+            <xpath expr="//field[@name='mobile']" position="attributes">
+                <attribute name="string">Finday</attribute>
+            </xpath>
+            <xpath expr="//field[@name='email']" position="attributes">
+                <attribute name="placeholder">oh: rakoto@example.mg</attribute>
+                <attribute name="string">Adiresy mailaka</attribute>
+            </xpath>
+            <xpath expr="//field[@name='website']" position="attributes">
+                <attribute name="placeholder">oh: https://www.orinasa.mg</attribute>
+                <attribute name="string">Tranonkala</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='function']" position="attributes">
+                <attribute name="placeholder">oh: Tale varotra</attribute>
+                <attribute name="string">Asa / andraikitra</attribute>
+            </xpath>
+            <xpath expr="//field[@name='title']" position="attributes">
+                <attribute name="string">Lohateny / Fanampin’anarana</attribute>
+            </xpath>
+            <xpath expr="//field[@name='lang']" position="attributes">
+                <attribute name="string">Fiteny</attribute>
+            </xpath>
+            <xpath expr="//field[@name='category_id']" position="attributes">
+                <attribute name="string">Sokajy</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='comment']" position="attributes">
+                <attribute name="placeholder">Fanamarihana anatiny...</attribute>
+                <attribute name="string">Fanamarihana anatiny</attribute>
+            </xpath>
+
+            <xpath expr="//page[@name='contact_addresses']" position="attributes">
+                <attribute name="string">Adiresy : Fifandraisana</attribute>
+            </xpath>
+            <xpath expr="//page[@name='sales_purchases']" position="attributes">
+                <attribute name="string">Sarampianarana : Fandoavam-bola</attribute>
+            </xpath>
+            <xpath expr="//page[@name='internal_notes']" position="attributes">
+                <attribute name="string">Fanamarihana anatiny</attribute>
+            </xpath>
+
+            <xpath expr="//group[@name='sale']" position="attributes">
+                <attribute name="string">Sarampianarana</attribute>
+            </xpath>
+            <xpath expr="//group[@name='purchase']" position="attributes">
+                <attribute name="string">Fandoavam-bola</attribute>
+            </xpath>
+            <xpath expr="//group[@name='misc']" position="attributes">
+                <attribute name="string">Hafa</attribute>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

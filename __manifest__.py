@@ -13,7 +13,8 @@
         'views/stage_views.xml',
         'views/crm_views.xml',
         'views/crm_lead_kanban_views.xml',
-        'views/crm_list_views.xml'
+        'views/crm_list_views.xml',
+        'views/contact_views.xml',
     ],
     'installable': True,
     'application': True,
