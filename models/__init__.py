@@ -1,1 +1,1 @@
-from . import Crmlead, Etudiant, Stage, res_partner
+from . import Crmlead, Etudiant, Stage, res_partner, Professeur

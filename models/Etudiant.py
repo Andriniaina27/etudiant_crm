@@ -34,7 +34,7 @@ class Etudiant(models.Model):
     ], string="Niveau")
 
     projet_pfe = fields.Char(string="Projet PFE")
-    tuteur_id = fields.Many2one('res.partner', string="Tuteur Académique")
+    tuteur_id = fields.Many2one('etudiants.professeur', string="Tuteur Académique")
 
     # Relations
     stage_ids = fields.One2many('etudiants.stage', 'etudiant_id', string="Stages")

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_professeurs" model="ir.actions.act_window">
+        <field name="name">Liste des Professeurs</field>
+        <field name="res_model">etudiants.professeur</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_professeur_etudiants_supervises" model="ir.actions.act_window">
+        <field name="name">Étudiants Supervisés</field>
+        <field name="res_model">etudiants.etudiant</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+    </record>
+
+
+    <menuitem id="menu_professeurs_root" name="CRM Professeurs" sequence="15"/>
+
+    <menuitem id="menu_professeurs_list"
+              name="Professeurs"
+              parent="menu_professeurs_root"
+              action="action_professeurs"
+              sequence="10"/>
+
+    <menuitem id="menu_professeurs_suivi"
+              name="Suivi"
+              parent="menu_professeurs_root"
+              action="action_professeur_etudiants_supervises"
+              sequence="20"/>
+
+</odoo>

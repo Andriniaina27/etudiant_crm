@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_professeur_list" model="ir.ui.view">
+        <field name="name">etudiants.professeur.list</field>
+        <field name="model">etudiants.professeur</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="matricule"/>
+                <field name="departement"/>
+                <field name="email"/>
+                <field name="etudiant_count" string="Nb Étudiants"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_professeur_form" model="ir.ui.view">
+        <field name="name">etudiants.professeur.form</field>
+        <field name="model">etudiants.professeur</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" name="action_view_etudiants" type="object" icon="fa-user-graduate">
+                            <field name="etudiant_count" widget="statinfo" string="Étudiants Supervisés"/>
+                        </button>
+                    </div>
+
+                    <group>
+                        <group string="Informations Personnelles">
+                            <field name="name"/>
+                            <field name="matricule"/>
+                            <field name="cin"/>
+                            <field name="date_naissance"/>
+                        </group>
+                        <group string="Coordonnées">
+                            <field name="email"/>
+                            <field name="telephone"/>
+                            <field name="adresse" widget="textarea"/>
+                        </group>
+                    </group>
+                    <group string="Informations Académiques">
+                        <field name="departement"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

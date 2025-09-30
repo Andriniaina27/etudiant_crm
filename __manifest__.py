@@ -15,6 +15,8 @@
         'views/crm_lead_kanban_views.xml',
         'views/crm_list_views.xml',
         'views/contact_views.xml',
+        'views/professeur_menu.xml',
+        'views/professeur_views.xml',
     ],
     'installable': True,
     'application': True,

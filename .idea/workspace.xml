@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="380132e3-63c5-4ef5-b366-20c0b1465369" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/views/contact_views.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Professeur.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/professeur_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/professeur_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Etudiant.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Etudiant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/etudiant_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/etudiant_menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +46,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "contact",
+    "git-widget-placeholder": "professeur",
     "last_opened_file_path": "C:/mon_projet_odoo/modules_personnalises/etudiant_crm/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
