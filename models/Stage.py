@@ -22,7 +22,7 @@ class Stage(models.Model):
         ('termine', 'Terminé'),
     ], string="Statut", default='draft')
 
-    # Contrainte de dates
+    # Contrainte des dates pour bien gerer
     @api.constrains('date_debut', 'date_fin')
     def _check_dates(self):
         for record in self:

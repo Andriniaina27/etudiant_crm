@@ -4,7 +4,7 @@ from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 import re
 
-
+#class Professeur
 class Professeur(models.Model):
     _name = 'etudiants.professeur'
     _description = 'Professeur Académique'
